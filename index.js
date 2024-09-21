@@ -9,10 +9,11 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = `${s1} ${s2} ${s3} ${s5} ${s4}`   
 
 // Print out the concatenated string
 
-
+console.log(tongueTwister)
 
 
 /*******************************************
@@ -23,10 +24,19 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const part1WithoutChar = part1.slice(0, -1)
+const part2WithoutChar = part2.slice(0, -1)
+
+const part1UpperCase = part1.slice(-1).toUpperCase()
+const part2UpperCase = part2.slice(-1).toUpperCase()
+
+console.log(part2UpperCase)
+
+const camelTail = `${part1WithoutChar+part1UpperCase+part2WithoutChar+part2UpperCase}`
 
 // Print the cameLtaiL-formatted string
 
-
+console.log(camelTail)
 
 
 /*******************************************
