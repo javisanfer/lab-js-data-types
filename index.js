@@ -59,10 +59,11 @@ console.log(billWithTip)
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
 
-
+console.log(randomNumber)
 
 /*******************************************
     Iteration 3.1 | Booleans
