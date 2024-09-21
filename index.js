@@ -30,8 +30,6 @@ const part2WithoutChar = part2.slice(0, -1)
 const part1UpperCase = part1.slice(-1).toUpperCase()
 const part2UpperCase = part2.slice(-1).toUpperCase()
 
-console.log(part2UpperCase)
-
 const camelTail = `${part1WithoutChar+part1UpperCase+part2WithoutChar+part2UpperCase}`
 
 // Print the cameLtaiL-formatted string
@@ -46,9 +44,12 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tip = billTotal / 15
+const billWithTip = billTotal + tip
 
 // Print out the tipAmount
 
+console.log(billWithTip)
 
 
 
